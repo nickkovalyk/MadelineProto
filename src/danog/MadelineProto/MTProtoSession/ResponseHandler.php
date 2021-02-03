@@ -271,7 +271,7 @@ trait ResponseHandler
             $request->setRefreshReferences(true);
             $request->setMsgId(null);
             $request->setSeqNo(null);
-            //$this->methodRecall('', ['message_id' => $msgId, 'postpone' => true]);
+            $this->methodRecall('', ['message_id' => $msgId, 'postpone' => true]);
             return null;
         }
 
